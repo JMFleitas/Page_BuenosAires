@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul class="header">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./about.html">Sobre nosotros</a></li>
+            <li><a href="accommodation.html">Hospedaje</a></li>
+            <li><a href="visits_activities.html">Actividades</a></li>
+            <li><a href="./entertainment.html">Entretenimiento</a></li>
+            <li><a href="./form.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <form action="mailto:jonathanfleitas3578@gmail.com" method="post" class="formulario">
+        <h1 class="title_form">consultas</h1>
+        <div>
+            <label for="nombre">Name</label>
+            <input class="inp" type="text" name="nombre" id="nombreInput" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input class="inp" type="email" name="email" id="emailInput" required>
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+
+            <input type="radio" name="gender" id="female" value="f">
+            <label for="female"><strong>Female</strong></label>
+
+            <input type="radio" name="gender" id="male" value="m">
+            <label for="male"><strong>Male</strong></label>   
+        </div>
+
+        <div>
+            <label for="textoInput">Text</label>
+            <textarea class="textArea" name="texto" id="textoInput" cols="30" rows="12" required></textarea>
+        </div> 
+        
+        <input type="submit" value="Send" class="btn_send">
+
+    </form>
+</body>
+</html>

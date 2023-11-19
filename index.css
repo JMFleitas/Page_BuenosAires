@@ -23,7 +23,8 @@ body{
     font-family: var(--three_font);
     background-image: var(--gradiente); 
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    justify-content: space-around;
 }   
 html{
     font-size: 10px;
@@ -364,6 +365,23 @@ label{
     border-radius: 25px;
     padding: 1rem;
     font-weight: 600;
+
+}
+.footer{
+    height: 8rem;
+    background-color: #0a50d2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.footer h1{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000000;
+   
 
 }
 

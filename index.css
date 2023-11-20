@@ -25,7 +25,15 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    min-height: 100%;
 }   
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 8rem;
+}
 html{
     font-size: 10px;
     text-align: center;
@@ -47,7 +55,10 @@ nav{
     justify-content: space-around;
     align-items: center;
     background-color: steelblue;
-    
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    opacity: .9;
 }
 
 .header a{
@@ -78,11 +89,19 @@ nav{
 
 /* !Index*/
 
-main{
+.index_container{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    flex-direction: column;     
+}
+.obelisco{
+    height: 50rem;
+    width: 70rem;
+    object-fit: scale-down;
+    filter: drop-shadow(5px 5px 8px skyblue) invert(15%),contrast(10%);
+    z-index: 1;
+    margin: 4em;
 }
 
 .tituloArg{
@@ -102,7 +121,7 @@ main{
     box-shadow: 2px 2px 5px #000;
     text-decoration: none;
     position: absolute;
-    top: 45rem;
+    top: 50rem;
     z-index: 2;  
 }
 .linkAbout{
@@ -131,14 +150,7 @@ animation-iteration-count: infinite;
     100% {transform: translate(1px, -2px) rotate(-1deg);}
 }
 
-.obelisco{
-    height: 50rem;
-    width: 70rem;
-    object-fit: scale-down;
-    image-rendering: optimizeQuality;
-    filter: drop-shadow(5px 5px 8px skyblue) invert(15%),contrast(10%);
-    z-index: 1;
-}
+
 /*!ABOUT*/
 .description{
     font-size: 2rem;
@@ -230,7 +242,7 @@ th{
 }
 /*!Visits */
 
-.main_visits{
+.container_visits{
     margin: 3rem;
     width: 100vw;
     display: flex;
@@ -282,11 +294,8 @@ th{
 
 /*! Entretenimineto */
 
-.main_entret{
-   margin: 2rem;
-}
 
-.main_entret h2{
+.title_activ{
     margin: 2rem;
     font-size: 2em;
     font-family: var(--three_font);
@@ -369,7 +378,7 @@ label{
 }
 .footer{
     height: 8rem;
-    background-color: #0a50d2;
+    background-color: steelblue;
     display: flex;
     align-items: center;
     justify-content: center;
